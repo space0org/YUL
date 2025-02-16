@@ -1,0 +1,8 @@
+*.conf
+!*.conf.template
+.env
+*.pem
+*.key
+*.crt
+**/node_data
+**/.DS_Store
