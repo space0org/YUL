@@ -33,7 +33,10 @@ services:
   dashboard:
     image: jwahab/regtest-dashboard:latest
     container_name: yul-dashboard
+    volumes:
+      - ../config/dashboard:/config:ro
     environment:
+      DASH_PORT: 3010
       SV_HOST: node1
       SV_PORT: 8332
       SV_USER: ${YUL_RPC_USER}
